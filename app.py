@@ -75,7 +75,7 @@ def get_platform(url):
 
 def extract_instagram_id(url):
     try:
-        regex = r'(?:https?:\/\/)?(?:www\.)?instagram\.com(?:\/reels\/|\/reel\/)([^\/?]+)(?:\S+)?'
+        regex = r'(?:https?:\/\/)?(?:www\.)?instagram\.com(?:\/reels\/|\/reel\/|\/p\/)([^\/?]+)(?:\S+)?'
         match = re.search(regex, url, re.IGNORECASE)
         
         if match:
